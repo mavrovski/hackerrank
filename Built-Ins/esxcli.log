@@ -1,0 +1,17 @@
+[2019-01-02 14:17:08,545 root CRITICAL] Exception:Server has wrong SHA1 thumbprint: fakefakefakefakefakefakefakefakefakefake (required) != 2b5f64811bdbda0bd950416730dd8ec5576bfd1d (server)
+[2019-01-02 14:17:08,545 root CRITICAL] Traceback (most recent call last):
+   File "/build/mts/release/bora-8109004/bora/build/esxcli/release/build/Session.py", line 852, in Login
+   File "/build/mts/release/bora-8109004/bora/build/esxcli/release/build/Session.py", line 1005, in _GetServiceContent
+   File "/build/mts/release/bora-8109004/bora/build/esxcli/release/build/pyVmomi/VmomiSupport.py", line 557, in <lambda>
+   File "/build/mts/release/bora-8109004/bora/build/esxcli/release/build/pyVmomi/VmomiSupport.py", line 363, in _InvokeMethod
+   File "/build/mts/release/bora-8109004/bora/build/esxcli/release/build/pyVmomi/SoapAdapter.py", line 1306, in InvokeMethod
+   File "/build/mts/release/bora-8109004/bora/build/esxcli/release/build/pyVmomi/SoapAdapter.py", line 1391, in GetConnection
+   File "/build/mts/release/bora-8109004/bora/build/esxcli/release/build/pyVmomi/SoapAdapter.py", line 960, in _VerifyThumbprint
+ pyVmomi.SoapAdapter.ThumbprintMismatchException: Server has wrong SHA1 thumbprint: fakefakefakefakefakefakefakefakefakefake (required) != 2b5f64811bdbda0bd950416730dd8ec5576bfd1d (server)
+
+[2019-01-02 14:17:27,718 root CRITICAL] Exception:Invalid SHA1 thumbprint -- --username
+[2019-01-02 14:17:27,719 root CRITICAL] Traceback (most recent call last):
+   File "/build/mts/release/bora-8109004/bora/build/esxcli/release/build/Session.py", line 806, in Login
+   File "/build/mts/release/bora-8109004/bora/build/esxcli/release/build/pyVmomi/SoapAdapter.py", line 1208, in __init__
+ Exception: Invalid SHA1 thumbprint -- --username
+
